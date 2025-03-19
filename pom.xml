@@ -35,17 +35,18 @@
     <version>4.10.0</version> <!-- or the latest version -->
 </dependency>
 
- <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.7.0</version>
-    <scope>test</scope>
-</dependency>
+ 
 
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.7.0</version> <!-- or the latest version -->
+</dependency>
+ <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version> <!-- or whatever version you're using -->
+    <scope>test</scope>
 </dependency>
     <!-- Optionally: parameterized tests support -->
     <dependency>
