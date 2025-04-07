@@ -1,16 +1,16 @@
 package com.qa.testscripts;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
-
+import com.qa.testpages.LoginPage;
 import com.qa.testutility.BaseTest;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class loginscript extends BaseTest{
-	@BeforeMethod
-    public void setup() {
-        driver = new ChromeDriver();
-        driver.get("https://www.saucedemo.com");
-        loginPage = new LoginPage(driver);
+public class loginscript extends BaseTest {
+
+    @Test
+    public void testValidLogin() {
+    	LoginPage loginPage = new com.qa.testpages.LoginPage(driver);
+        loginPage.login("standard_user", "secret_sauce");
+        Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"));
     }
-
 }

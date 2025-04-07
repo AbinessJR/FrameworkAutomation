@@ -2,25 +2,23 @@ package com.qa.testutility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v112.browser.Browser;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
-	    public static WebDriver getDriver(String x) {
-	        switch (x) {
-	             case1 x="CHROME";
-	                return new ChromeDriver();
-	                break;
-	           // case FIREFOX:
-	              //  return new FirefoxDriver();
-	            default:
-	                throw new IllegalArgumentException("Invalid browser type");
-	        }
-	    
-			return null;
-	    }
-	    }
-
-	
-	
-
+    public static WebDriver getDriver(String browser) {
+        WebDriver driver = null;
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
+                driver = new ChromeDriver();
+                break;
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "path/to/geckodriver.exe");
+                driver = new FirefoxDriver();
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid browser: " + browser);
+        }
+        return driver;
+    }
+}
