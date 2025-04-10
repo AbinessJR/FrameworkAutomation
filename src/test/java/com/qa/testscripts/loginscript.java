@@ -18,7 +18,6 @@ public class loginscript extends BaseTest {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(header, "inventory.html");
 
-        
        
     }
 }
