@@ -2,35 +2,26 @@ package com.qa.testpages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    private WebDriver driver;
+     WebDriver driver;
 
-    // Locators (using stable IDs from SauceDemo)
-    private By usernameField = By.id("user-name");
-    private By passwordField = By.id("password");
-    private By loginButton = By.id("login-button");
-
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-    }
-
-    // Methods
-    public void enterUsername(String username) {
-        driver.findElement(usernameField).sendKeys(username);
-    }
-
-    public void enterPassword(String password) {
-        driver.findElement(passwordField).sendKeys(password);
-    }
-
-    public void clickLogin() {
-        driver.findElement(loginButton).click();
-    }
-
-    public void login(String username, String password) {
-        enterUsername(username);
-        enterPassword(password);
-        clickLogin();
-    }
+ 	@FindBy(xpath="//i[@class='material-icons']")
+ 	WebElement menu;
+ 	public WebElement login() {
+ 		return menu;
+ 	}
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	  public LoginPage(WebDriver driver)
+ 	    {
+ 	        this.driver=driver;
+ 	       PageFactory.initElements(driver,this); 
+ 	    }
 }
