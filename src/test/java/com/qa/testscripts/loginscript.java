@@ -6,11 +6,13 @@ import com.qa.testutility.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class loginscript extends BaseTest {
      WebDriver driver;
      LoginPage lg;
      
+
     @Test
     public void login() {
     	lg =  new LoginPage(driver);
@@ -25,6 +27,6 @@ public class loginscript extends BaseTest {
     	//LoginPage loginPage = new com.qa.testpages.LoginPage(driver);
       //  loginPage.login("standard_user", "secret_sauce");
        // Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"));
-    	
+
     }
 }
