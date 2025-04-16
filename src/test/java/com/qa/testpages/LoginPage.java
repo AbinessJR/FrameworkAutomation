@@ -14,6 +14,11 @@ public class LoginPage {
  	public WebElement login() {
  		return menu;
  	}
+	@FindBy(xpath="//i[@class='material-icons']")
+ 	WebElement menu1;
+ 	public WebElement login1() {
+ 		return menu;
+ 	}
  	
  	
  	
