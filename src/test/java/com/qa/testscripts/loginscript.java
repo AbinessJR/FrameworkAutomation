@@ -14,4 +14,3 @@ public class loginscript extends BaseTest {
      
    
     }
-}
