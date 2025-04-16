@@ -15,6 +15,10 @@ public class loginscript extends BaseTest {
     public void login() {
     	lg =  new LoginPage(driver);
     	lg.login().sendKeys("standard_user");
+    	lg.login().sendKeys("standard_user");
+    	lg.login().sendKeys("standard_user");
+    	lg.login().sendKeys("standard_user");
+    	
     	
     	
     	

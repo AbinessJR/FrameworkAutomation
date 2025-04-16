@@ -11,8 +11,9 @@ public class BrowserFactory {
         WebDriver driver = null;
         switch (browser.toLowerCase()) {
             case "chrome":
-               // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
                 WebDriverManager.chromedriver().driverVersion("130.0.6723.92").setup();
+               // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
+
                 break;
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", "path/to/geckodriver.exe");
