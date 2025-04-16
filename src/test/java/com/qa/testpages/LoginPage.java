@@ -20,10 +20,6 @@ public class LoginPage {
  		return menu;
  	}
  	
- 	public WebElement login3() {
- 		return menu;
- 	}
- 	
  	
  	
  	
