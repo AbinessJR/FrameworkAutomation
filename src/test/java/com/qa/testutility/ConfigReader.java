@@ -17,6 +17,6 @@ public class ConfigReader {
 	    }
 
 	    public static String getBaseUrl() {
-	        return prop.getProperty("saucedemolab.com");
+	        return prop.getProperty("https://www.saucedemo.com/login");
 	    }
 	}
