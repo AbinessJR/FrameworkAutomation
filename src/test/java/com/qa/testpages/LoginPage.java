@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
 
+
+
  	@FindBy(xpath="//i[@class='material-icons']")
  	WebElement menu;
  	public WebElement login() {
