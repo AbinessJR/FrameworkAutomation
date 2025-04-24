@@ -11,12 +11,16 @@ public class ConfigReader {
 	        try {
 	            FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
 	            prop.load(fis);
-	        } catch (IOException e) {
+	        } 
+	        
+	        catch (IOException e) {
 	            e.printStackTrace();
 	        }
 	    }
 
 	    public static String getBaseUrl() {
-	        return prop.getProperty("https://www.saucedemo.com/login");
+	        return prop.getProperty("baseUrl");
 	    }
+	  
 	}
+ 

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.testscripts.loginscript">
         <methods>
+          <include name="login"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="testValidLogin"/>
         </methods>
       </class> <!-- com.qa.testscripts.loginscript -->
     </classes>
