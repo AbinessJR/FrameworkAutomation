@@ -17,7 +17,7 @@ public class loginscript extends BaseTest {
     	lg.username().sendKeys("standard_user");
     	lg.password().sendKeys("secret_sauce");
     	lg.loginButton().click();
-    	System.out.println("Login success");
+    	System.out.println("Login done");
     	
     	
     	
