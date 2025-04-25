@@ -4,22 +4,20 @@ import com.qa.testpages.LoginPage;
 import com.qa.testutility.BaseTest;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class loginscript extends BaseTest {
-     WebDriver driver;
+  
      LoginPage lg;
      
 
     @Test
     public void login() {
     	lg =  new LoginPage(driver);
-    	lg.login().sendKeys("standard_user");
-    	lg.login().sendKeys("standard_user");
-    	lg.login().sendKeys("standard_user");
-    	lg.login().sendKeys("standard_user");
+    	lg.username().sendKeys("standard_user");
+    	lg.password().sendKeys("secret_sauce");
+    	lg.loginButton().click();
+    	System.out.println("Login success");
     	
     	
     	
