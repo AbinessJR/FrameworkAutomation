@@ -25,5 +25,5 @@ public class loginscript extends BaseTest {
     	//LoginPage loginPage = new com.qa.testpages.LoginPage(driver);
       //  loginPage.login("standard_user", "secret_sauce");
        // Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"));
-
+    }
     }
