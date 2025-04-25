@@ -17,6 +17,7 @@ public class LoginPage {
 WebDriver driver;
 
 
+
  	@FindBy(xpath="//input[@id='user-name']")
  	WebElement menu;
  	public WebElement username() {

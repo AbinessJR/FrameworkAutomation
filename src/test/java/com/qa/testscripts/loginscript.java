@@ -27,4 +27,3 @@ public class loginscript extends BaseTest {
        // Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"));
 
     }
-}
