@@ -149,14 +149,14 @@
                   </a> <!-- home -->
                   <span class="method-name">home</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#react\-burger\-menu\-btn&quot;}
-  (Session info: chrome=136.0.7103.93)
+  (Session info: chrome=137.0.7151.69)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2c645f9121e34997597da9e7e64e51ab, findElement {using=id, value=react-burger-menu-btn}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 135.0.7049.96 (3504c18e3661..., userDataDir: /var/folders/bx/fs7hxk5558n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50365/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2c645f9121e34997597da9e7e64e51ab
+Command: [34f06e82896c2bd0efc8fb6f5a4eefdc, findElement {using=id, value=react-burger-menu-btn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.69 (0b41cf178df5..., userDataDir: /var/folders/bx/fs7hxk5558n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49848/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34f06e82896c2bd0efc8fb6f5a4eefdc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -214,7 +214,7 @@ Session ID: 2c645f9121e34997597da9e7e64e51ab
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.testscripts.loginscript</span>
+              <span class="class-name">com.qa.testscripts.homescript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -229,7 +229,7 @@ Session ID: 2c645f9121e34997597da9e7e64e51ab
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.testscripts.homescript</span>
+              <span class="class-name">com.qa.testscripts.loginscript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -244,7 +244,7 @@ Session ID: 2c645f9121e34997597da9e7e64e51ab
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/bx/fs7hxk5558nby4jq53kf51nw0000gp/T/testng-eclipse--1566508850/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/bx/fs7hxk5558nby4jq53kf51nw0000gp/T/testng-eclipse--518279309/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -257,8 +257,8 @@ Session ID: 2c645f9121e34997597da9e7e64e51ab
       &lt;class name=&quot;com.qa.testutility.BaseTest&quot;/&gt;
       &lt;class name=&quot;com.qa.testscripts.checkoutscript&quot;/&gt;
       &lt;class name=&quot;Framework.FrameworkAutomation.App&quot;/&gt;
-      &lt;class name=&quot;com.qa.testscripts.homescript&quot;/&gt;
       &lt;class name=&quot;com.qa.testscripts.loginscript&quot;/&gt;
+      &lt;class name=&quot;com.qa.testscripts.homescript&quot;/&gt;
       &lt;class name=&quot;com.qa.testutility.BrowserFactory&quot;/&gt;
       &lt;class name=&quot;Framework.FrameworkAutomation.AppTest&quot;/&gt;
       &lt;class name=&quot;com.qa.testpages.homePage&quot;/&gt;
@@ -306,20 +306,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'com.qa.testscripts.loginscript')
-data.setCell(0, 3, 3513);
+data.setCell(0, 3, 866);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'com.qa.testscripts.homescript')
-data.setCell(1, 3, 3453);
+data.setCell(1, 3, 758);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'home')
 data.setCell(2, 2, 'com.qa.testscripts.homescript')
-data.setCell(2, 3, 3122);
+data.setCell(2, 3, 42);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -345,47 +345,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testscripts.homescript</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testscripts.loginscript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(https://www.saucedemo.com/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">home</span>
-                <span class="method-start">2714 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5842 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(https://www.saucedemo.com/)</span>
-                <span class="method-start">5844 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">7493 ms</span>
+                <span class="method-start">5689 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10948 ms</span>
+                <span class="method-start">6562 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testscripts.loginscript</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testscripts.homescript</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(https://www.saucedemo.com/)</span>
-                <span class="method-start">10953 ms</span>
+                <span class="method-start">6857 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">12707 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">home</span>
+                <span class="method-start">10394 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16222 ms</span>
+                <span class="method-start">10445 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(https://www.saucedemo.com/)</span>
+                <span class="method-start">10658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">14598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15359 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -12,7 +12,7 @@ public class BrowserFactory {
         
         switch (browser.toLowerCase()) {
             case "chrome":
-                WebDriverManager.chromedriver().driverVersion("135.0.7049.96").setup();
+                WebDriverManager.chromedriver().driverVersion("137.0.7151.69").setup();
                // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
@@ -21,10 +21,9 @@ public class BrowserFactory {
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", "path/to/geckodriver.exe");
                 //WebDriverManager.firefoxdriver().setup();
-
                 driver = new FirefoxDriver();
-                
                 break;
+                
             default:
                 throw new IllegalArgumentException("Invalid browser: " + browser);
         }

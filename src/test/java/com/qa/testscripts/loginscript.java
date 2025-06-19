@@ -13,6 +13,7 @@ public class loginscript extends BaseTest {
 
     @Test
     public void login() {
+    	
     	lg =  new LoginPage(driver);
     	lg.username().sendKeys("standard_user");
     	lg.password().sendKeys("secret_sauce");

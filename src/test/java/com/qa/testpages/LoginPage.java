@@ -14,8 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
-WebDriver driver;
 
+	private WebDriver driver;
 
 
  	@FindBy(xpath="//input[@id='user-name']")
@@ -41,7 +41,7 @@ WebDriver driver;
  	        this.driver=driver;
  	       PageFactory.initElements(driver,this); 
  	       
- 	      try {
+ 	/*      try {
  	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
  	            wait.until(ExpectedConditions.alertIsPresent());
  	            Alert alert = driver.switchTo().alert();
@@ -50,6 +50,8 @@ WebDriver driver;
  	            // No alert found, proceed normally
  	            System.out.println("No alert detected. Continuing test.");
  	        }
+ 	        
+ 	        */
  	    }
  	  
  	  
