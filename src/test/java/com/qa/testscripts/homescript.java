@@ -1,17 +1,24 @@
 package com.qa.testscripts;
 
-import com.qa.testpages.homepage;
+import org.testng.annotations.Test;
+
+import com.qa.testpages.homePage;
 import com.qa.testutility.BaseTest;
 
-public class homescript extends BaseTest{
+public class homescript extends loginscript{
  
-	homepage home_p;
+	homePage home_p;
 	
+	@Test
 	public void home() {
-		//home_p = new homepage(driver);
-		
-	}
+	home_p = new homePage(driver);
+	
+	home_p.hamburger().click();
+	System.out.println("Menu clicked successfully");
+
 	
 	
-	
+}
+
+
 }

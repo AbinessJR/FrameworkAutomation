@@ -13,11 +13,12 @@ public class loginscript extends BaseTest {
 
     @Test
     public void login() {
+    	
     	lg =  new LoginPage(driver);
     	lg.username().sendKeys("standard_user");
     	lg.password().sendKeys("secret_sauce");
     	lg.loginButton().click();
-    	System.out.println("Login success");
+    	System.out.println("Login done once");
     	
     	
     	
@@ -25,5 +26,5 @@ public class loginscript extends BaseTest {
     	//LoginPage loginPage = new com.qa.testpages.LoginPage(driver);
       //  loginPage.login("standard_user", "secret_sauce");
        // Assert.assertTrue(driver.getCurrentUrl().contains("inventory.html"));
-
+    }
     }
